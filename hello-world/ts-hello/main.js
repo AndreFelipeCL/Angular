@@ -1,20 +1,30 @@
-var number = 5; //JS declaring way
-var count = 5; //TS declaring way
-//JS For loop way
-function doSomething() {
-    for (var i = 0; i <= number; i++) {
-        console.log("JS LOOP #" + i);
-    }
-    console.log("In JS we can access the iterable variable outside the local scope, Look: [i = " + i + "]");
-    console.log("It's bad, isn't it? :'(");
-}
-//TS For loop way
-function doSomethingRight() {
-    for (var i = 0; i <= number; i++) {
-        console.log("JS LOOP #" + i);
-    }
-    console.log("Now, we can not access local variables!!! :D");
-    console.log("If we try to access it we will get an error, but still get the JS code.");
-}
-doSomething();
-doSomethingRight();
+//Declaring variable of type number
+var a;
+//Declaring variable of type boolean
+var b;
+//Declaring variable of type String
+var c;
+//Declaring variable of type Any
+var d;
+//Declaring array variable of type Number
+var e = [1, 2, 3, 4];
+//Declaring array variable of type Any
+var f = ["1", 2, false];
+// Constants
+var ColorRed = 0;
+var ColorGreen = 1;
+var ColorBlue = 2;
+// Container for Constants (Enum)
+/**
+ * This container sets the incremented value to declareted Enums:
+ * Take a look in this verbose alternative declaration:
+ *      enum Color { Red = 0, Green = 1, Blue = 2};
+ */
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+;
+var backgroundColor = Color.Blue;

@@ -1,32 +1,12 @@
-//Declaring variable of type number
-let a : number;
+// Type Assertions
 
-//Declaring variable of type boolean
-let b : boolean
+let message;
+message = 'abc';
+let isEndsWithC : boolean;
+let anotherWay : boolean;
 
-//Declaring variable of type String
-let c : string;
+isEndsWithC = (<string>message).endsWith('c');
+anotherWay = (message as string).endsWith('c');
 
-//Declaring variable of type Any
-let d : any;   
-
-//Declaring array variable of type Number
-let e : number[] = [1, 2, 3, 4];
-//Declaring array variable of type Any
-let f : any[] = ["1", 2, false];
-
-// Constants
-const ColorRed = 0;
-const ColorGreen = 1;
-const ColorBlue = 2;
-
-// Container for Constants (Enum)
-/**
- * This container sets the incremented value to declareted Enums:
- * Take a look in this verbose alternative declaration:
- *      enum Color { Red = 0, Green = 1, Blue = 2};
- */
-enum Color { Red = 0, Green = 1, Blue = 2 };
-
-
-let backgroundColor = Color.Blue;
+console.log("Assertion 1 - (<string>message) = " + isEndsWithC);
+console.log("Assertion 2 - (message as string) = " + anotherWay);

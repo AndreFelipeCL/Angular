@@ -1,4 +1,4 @@
-class Point {
+class Point20 {
     x: number;
     y: number;
 
@@ -6,7 +6,7 @@ class Point {
         //..
     }
 
-    getDistance(another: Point){
+    getDistance(another: Point20){
         //..
     }
 }

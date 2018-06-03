@@ -1,4 +1,4 @@
-class Point {
+class Point21 {
     x: number;
     y: number;
 
@@ -11,7 +11,7 @@ class Point {
     }
 }
 
-let point = new Point();
-point.x = 1;
-point.y = 2;
-point.draw();
+let point21 = new Point21();
+point21.x = 1;
+point21.y = 2;
+point21.draw();

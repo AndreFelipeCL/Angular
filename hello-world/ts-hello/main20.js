@@ -1,11 +1,11 @@
-var Point = /** @class */ (function () {
-    function Point() {
+var Point20 = /** @class */ (function () {
+    function Point20() {
     }
-    Point.prototype.draw = function () {
+    Point20.prototype.draw = function () {
         //..
     };
-    Point.prototype.getDistance = function (another) {
+    Point20.prototype.getDistance = function (another) {
         //..
     };
-    return Point;
+    return Point20;
 }());

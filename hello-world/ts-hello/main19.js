@@ -4,7 +4,7 @@
  * @param {*} x Parameter One
  * @param {*} y Parameter Two
  */
-let drawPoint = (x, y) => {
+var drawPoint = function (x, y) {
     // ...
 };
 /**
@@ -19,7 +19,7 @@ let drawPoint = (x, y) => {
  *
  * So, we need to avoid them...
  */
-let drawPoint2 = (x, y, a, b, c, d, e) => {
+var drawPoint2 = function (x, y, a, b, c, d, e) {
     // ...
 };
 /**
@@ -29,13 +29,13 @@ let drawPoint2 = (x, y, a, b, c, d, e) => {
  *
  * @param {*} point X and Y coordenates of a Point.
  */
-let drawPoint3 = (point) => {
+var drawPoint3 = function (point) {
     // ...
 };
 drawPoint3({
     x: 1,
     y: 2
 });
-let drawPoint4 = (point) => {
+var drawPoint4 = function (point) {
     // ...
 };

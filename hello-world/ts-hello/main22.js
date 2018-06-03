@@ -1,12 +1,14 @@
-var Point23 = /** @class */ (function () {
-    function Point23(x, y) {
+var Point22 = /** @class */ (function () {
+    function Point22(x, y) {
         this.x = x;
         this.y = y;
     }
-    Point23.prototype.draw = function () {
+    Point22.prototype.draw = function () {
         console.log('X: ' + this.x + ', Y: ' + this.y);
     };
-    return Point23;
+    return Point22;
 }());
-var point23 = new Point23(1, 2);
-point23.draw();
+var point22 = new Point22(1, 2);
+point22.x = 1;
+point22.y = 2;
+point22.draw();

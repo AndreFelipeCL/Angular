@@ -1,6 +1,6 @@
-class Point23 {
-    private x: number;
-    private y: number;
+class Point22 {
+    x: number;
+    y: number;
     
     constructor(x?: number, y?: number){
         this.x = x;
@@ -12,5 +12,7 @@ class Point23 {
     }
 }
 
-let point23 = new Point23(1, 2);
-point23.draw();
+let point22 = new Point22(1, 2);
+point22.x = 1
+point22.y = 2
+point22.draw();
